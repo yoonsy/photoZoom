@@ -60,4 +60,4 @@ Simple, lightweight jQuery plugin to show zoomed view of image based on screen d
 ```
 ## Demo
 
-    - Demo : <http://demos.9lessons.info/photozoom/>
+    - Demo : <http://yoonsy.github.io/photoZoom>
