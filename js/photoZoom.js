@@ -52,7 +52,7 @@
                 var images = this.findImages();
                 if(images){
                     jQuery.each(images,function(i,imgObj){
-                        jQuery(imgObj).live({
+                        jQuery(imgObj).on({
                             mouseenter : function(){
                                 functions.whenHover(this);
                             },
