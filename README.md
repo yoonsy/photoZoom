@@ -2,6 +2,11 @@
 
 Simple, lightweight jQuery plugin to show zoomed view of image based on screen dimensions. It simulates photo zoom for facebook (Chrome extension).
 
+## The reason why I foked from [arunkumarsekar/photoZoom](https://github.com/arunkumarsekar/photoZoom)
+- It is not maintained any more.
+- It uses deprecated method `live`
+- It has bug on represent bottom layer
+
 ## Browser Support
 
  - Internet Explorer 7+
