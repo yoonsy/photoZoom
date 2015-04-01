@@ -1,7 +1,7 @@
 /*
- * Version  : 1.1
- * Author   : Arun Kumar Sekar
- * Mail     : arunkumarsekar@hotmail.com
+ * Version  : 1.2
+ * Author   : yoonsy
+ * Mail     : nscorpio16@gmail.com
  * Plugin   : photoZoom.js
  */
 (function($){
@@ -108,14 +108,12 @@
 
                 /* Bottom Layer */
                 var hRatio = (h / 100 * 55);
-                if(hRatio > y){
-                    maxHeight = ((h - y) - 10);
-                } else {
-                    this.divObj.css({"top":(topPos - (imgObj.height() + 20))+"px"});
-                    maxHeight = ((y - h) - 10);
-                }
-                maxHeight = (this.winHeight < maxHeight) ? this.winHeight : maxHeight;
+                maxHeight = (this.winHeight < tmpImg.height) ? this.winHeight : tmpImg.height;
                 imgObj.css({'max-height':maxHeight+"px"});
+
+                if(topPos + imgObj.height() > (y - e.clientY + h)){
+                    this.divObj.css({"top":(topPos - imgObj.height() + (h - e.clientY))+"px"});
+                }
             },
             whenHoverOut:function(imgObj){
                 this.divObj.hide();
